@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expressions</title>
+</head>
+<body>
+    <h1>Regular Expressions</h1>
+    <h3>This is console stuff, my bud.</h3>
+
+    <script>
+        // Lesson 1
+        const myRegEx = /Question 1/;
+        const questionOneString = "Question 1";
+        if(myRegEx.test(questionOneString)){
+            console.log('Lesson 1: Nailed it!')
+        } else{
+            console.log("Lesson 1: It doesn't got it, my dude.")
+        }
+
+        //Lesson 2
+        const multipleChoiceRegEx = /dog|cat|bird|fish/;
+        const pets = "bird";
+        console.log(`Lesson 2: ${multipleChoiceRegEx.test(pets)}`);
+
+        //Lesson 3
+        const caseInsensitiveRegEx = /JamesBond/i;
+        const jamesBond = 'jamesBond';
+        console.log(`Lesson 3: ${caseInsensitiveRegEx.test(jamesBond)}`);
+
+        //Lesson 4
+        const lessonFourRegEx = /Matches!/i;
+        const lessonFourString = "This Matches!"
+        console.log(`Lesson 4: ${lessonFourString.match(lessonFourRegEx)}`);
+
+        //Lesson 5
+        const lesson5String = 'The voyages of the starship Enterprise';
+        const lesson5Regex = /the/ig;
+        console.log(`Lesson 5: ${lesson5String.match(lesson5Regex)}`)
+    </script>
+
+</body>
+</html>
