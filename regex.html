@@ -38,6 +38,12 @@
         const lesson5String = 'The voyages of the starship Enterprise';
         const lesson5Regex = /the/ig;
         console.log(`Lesson 5: ${lesson5String.match(lesson5Regex)}`)
+
+        // Lesson 6
+        const wildcardRegex = /.un/;
+        const lessonSixWordOne = 'fun';
+        const lessonSixWordTwo = 'run';
+        console.log(`Lesson 6: ${wildcardRegex.test(lessonSixWordOne)} and ${wildcardRegex.test(lessonSixWordTwo)}`)
     </script>
 
 </body>
